@@ -19,6 +19,9 @@ import AppRoutes from "./routes/AppRoutes";
 // ########## МОДУЛИ
 import { BrowserRouter } from "react-router-dom";
 
+import { Provider } from "react-redux";
+import { store } from "../06_Store/store";
+
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
@@ -26,7 +29,9 @@ import { BrowserRouter } from "react-router-dom";
 const App = (): JSX.Element => {
    return (
       <BrowserRouter basename="/wowin_cases">
-         <AppRoutes />
+         <Provider store={store}>
+            <AppRoutes />
+         </Provider>
       </BrowserRouter>
    );
 };

@@ -1,20 +1,18 @@
 /* ######################################################################
 
-   Types
+   Gifts Types
 
 ######################################################################### */
 
-
 // ===== СТАНДАРТНЫЕ
-import type { TGiftData } from "../../05_Shared/types/global";
-
+import type { TGiftsSet, TGiftData } from "../../05_Shared/types/global";
 
 /* ###################################################################### */
 
 
-export type TGifts = {
-   list: TGiftData[],
-   selectedProduct: TGifts | null,
+export type TGiftsState = {
+   data: TGiftsSet | null,
+   selectedGift: TGiftData | null,
    status: "idle" | "loading" | "success" | "error",
    error: string | null,
 };
