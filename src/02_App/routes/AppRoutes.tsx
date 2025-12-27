@@ -38,7 +38,7 @@ const AppRoutes = (): JSX.Element => {
 
             <Route path="/home" element={<Pages.Home />} />
 
-            <Route path="/case/new" element={<Pages.Case isNew />} />
+            <Route path="/case/:id" element={<Pages.Case />} />
 
          </Route>
 

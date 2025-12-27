@@ -80,7 +80,7 @@ const GiftList = (): JSX.Element => {
          </div>
 
          <div className="gifts-list">
-            {gifts.data && sortGifts(gifts.data.elements.filter(g => !search ? g : g.title.toLowerCase().includes(search.toLowerCase())), sort, sortType)
+            {gifts.data && sortGifts([...gifts.data.elements].filter(g => !search ? g : g.title.toLowerCase().includes(search.toLowerCase())), sort, sortType)
                .map(item => <Gift key={item.id} data={item} mark={search.toLowerCase()} clickAction={chooseGift} />)}
          </div>
 

@@ -38,7 +38,7 @@ const giftsSlice = createSlice({
          state.error = null;
       },
       reset: () => {
-         return initialState;
+         return { ...initialState };
       },
    },
    extraReducers: (builder) => {

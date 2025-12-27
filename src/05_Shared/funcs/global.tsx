@@ -6,6 +6,8 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
+export const unixNow = (): number => Math.floor(Date.now() / 1000);
+
 export const formatUnixDate = (unix: number): string => {
    return new Date(unix * 1000)
       .toLocaleDateString("ru-RU", {

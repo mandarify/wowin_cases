@@ -6,6 +6,10 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
+
+export type TStoreStatus = "idle" | "loading" | "success" | "error";
+
+
 export type TGiftData = {
    id: string;
    title: string;
@@ -45,14 +49,19 @@ export type TCaseItem = {
    content: TCaseItemContentType,
 };
 
+export type TCaseStatus = "edit" | "published" | "deleted";
+
 export type TCase = {
    id: number;
+   status: TCaseStatus,
    isTop: number | null;
    position: number;
    title: string,
    desc: string,
    slug: string,
+   dtPublication: number | null,
    dtCreate: number,
+   dtDeleted: number | null,
    style: TCaseStyle,
    price: number,
    sale: null | {
