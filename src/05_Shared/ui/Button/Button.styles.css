@@ -1,0 +1,49 @@
+/* =================================
+   Button
+==================================== */
+
+.button {
+   padding: 0 10px;
+   height: 30px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 4px;
+   background-color: #006083;
+
+   cursor: pointer;
+}
+
+.button-content {
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--app-text-color);
+}
+
+.button:hover {
+   background-color: #0097ce;
+}
+
+.button:hover .button-content {
+   color: var(--app-text-color);
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

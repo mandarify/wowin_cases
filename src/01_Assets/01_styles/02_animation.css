@@ -1,0 +1,44 @@
+/* =================================
+   ANIMATIONS
+==================================== */
+
+/* Шторм. */
+@keyframes storm {
+   0% {
+      transform: translateX(-2px);
+   }
+
+   25% {
+      transform: translateX(2px);
+   }
+
+   50% {
+      transform: translateX(-2px);
+   }
+
+   75% {
+      transform: translateX(2px);
+   }
+
+   100% {
+      transform: translateX(0px);
+   }
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

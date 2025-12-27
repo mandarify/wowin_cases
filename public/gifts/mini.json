@@ -1,0 +1,1104 @@
+{
+   "title": "Gifts Mini Information",
+   "description": "Minimum information about telegram gifts.",
+   "length": 137,
+   "lastUpdate": "2025-12-05T19:41:57.087Z",
+   "elements": [
+      {
+         "id": "5839094187366024301",
+         "title": "Khabib’s Papakha",
+         "fdate": 1763834400,
+         "ldate": 1763921100,
+         "upgrade": 200,
+         "price": 5570
+      },
+      {
+         "id": "5818708013426410448",
+         "title": "Telegram Pin",
+         "fdate": 1763229540,
+         "ldate": 1763244240,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5775966332847654507",
+         "title": "",
+         "fdate": 1761944071,
+         "ldate": 1761944694,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5776227780391864916",
+         "title": "",
+         "fdate": 1761943018,
+         "ldate": 1761991110,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5775955135867913556",
+         "title": "",
+         "fdate": 1761943013,
+         "ldate": 1761958814,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "6001229799790478558",
+         "title": "",
+         "fdate": 1760107709,
+         "ldate": 1760123446,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "6001425315291727333",
+         "title": "",
+         "fdate": 1760107705,
+         "ldate": 1760122395,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "6003477390536213997",
+         "title": "",
+         "fdate": 1760107689,
+         "ldate": 1760117636,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5886387158889005864",
+         "title": "",
+         "fdate": 1756746281,
+         "ldate": 1756759153,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5886756255493523118",
+         "title": "",
+         "fdate": 1756746266,
+         "ldate": 1756759666,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5884080014126745057",
+         "title": "",
+         "fdate": 1756681586,
+         "ldate": 1756714529,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5882129648002794519",
+         "title": "",
+         "fdate": 1756681586,
+         "ldate": 1756722480,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5834651202612102354",
+         "title": "",
+         "fdate": 1755205296,
+         "ldate": 1755205311,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5832279504491381684",
+         "title": "",
+         "fdate": 1755205296,
+         "ldate": 1755205311,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5832497899283415733",
+         "title": "",
+         "fdate": 1755205296,
+         "ldate": 1755205336,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5834918435477259676",
+         "title": "",
+         "fdate": 1755205296,
+         "ldate": 1755205363,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5832644211639321671",
+         "title": "",
+         "fdate": 1755205296,
+         "ldate": 1755205410,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5832371318007268701",
+         "title": "",
+         "fdate": 1755205296,
+         "ldate": 1755205475,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "6014591077976114307",
+         "title": "Snoop Dogg",
+         "fdate": 1752090606,
+         "ldate": 1752092850,
+         "upgrade": 25,
+         "price": 744
+      },
+      {
+         "id": "6012607142387778152",
+         "title": "Swag Bag",
+         "fdate": 1752090606,
+         "ldate": 1752091755,
+         "upgrade": 100,
+         "price": 1130
+      },
+      {
+         "id": "6012435906336654262",
+         "title": "Snoop Cigar",
+         "fdate": 1752090606,
+         "ldate": 1752090909,
+         "upgrade": 200,
+         "price": 2154
+      },
+      {
+         "id": "6014675319464657779",
+         "title": "Low Rider",
+         "fdate": 1752090606,
+         "ldate": 1752090692,
+         "upgrade": 1000,
+         "price": 7173.999999999999
+      },
+      {
+         "id": "6014697240977737490",
+         "title": "Westside Sign",
+         "fdate": 1752090606,
+         "ldate": 1752090638,
+         "upgrade": 2000,
+         "price": 13582
+      },
+      {
+         "id": "5999277561060787166",
+         "title": "",
+         "fdate": 1751653828,
+         "ldate": 1751654460,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5999298447486747746",
+         "title": "",
+         "fdate": 1751653828,
+         "ldate": 1751654120,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5999116401002939514",
+         "title": "",
+         "fdate": 1751653828,
+         "ldate": 1751653873,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5902339509239940491",
+         "title": "Bling Binky",
+         "fdate": 1748803787,
+         "ldate": 1748804018,
+         "upgrade": 1000,
+         "price": 5578
+      },
+      {
+         "id": "5900177027566142759",
+         "title": "Ice Cream",
+         "fdate": 1748730317,
+         "ldate": 1748748187,
+         "upgrade": 25,
+         "price": 660
+      },
+      {
+         "id": "5898012527257715797",
+         "title": "",
+         "fdate": 1748730317,
+         "ldate": 1748748885,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5897607679345427347",
+         "title": "",
+         "fdate": 1748730316,
+         "ldate": 1748732550,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5830323722413671504",
+         "title": "",
+         "fdate": 1746736655,
+         "ldate": 1747299447,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5832325860073407546",
+         "title": "",
+         "fdate": 1746736655,
+         "ldate": 1747290928,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5830340739074097859",
+         "title": "",
+         "fdate": 1746736655,
+         "ldate": 1747505628,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5807641025165919973",
+         "title": "",
+         "fdate": 1746051156,
+         "ldate": 1746541303,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5773668482394620318",
+         "title": "Easter Egg",
+         "fdate": 1745086907,
+         "ldate": 1745150847,
+         "upgrade": 25,
+         "price": 962.0000000000001
+      },
+      {
+         "id": "5773725897517433693",
+         "title": "Spring Basket",
+         "fdate": 1745086907,
+         "ldate": 1745165500,
+         "upgrade": 25,
+         "price": 900
+      },
+      {
+         "id": "5773791997064119815",
+         "title": "",
+         "fdate": 1745086906,
+         "ldate": 1745151113,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "6042113507581755979",
+         "title": "Stellar Rocket",
+         "fdate": 1744491272,
+         "ldate": 1744739100,
+         "upgrade": 25,
+         "price": 700
+      },
+      {
+         "id": "6005880141270483700",
+         "title": "Jolly Chimp",
+         "fdate": 1743461879,
+         "ldate": 1743698027,
+         "upgrade": 25,
+         "price": 1448
+      },
+      {
+         "id": "6006064678835323371",
+         "title": "Happy Brownie",
+         "fdate": 1743461878,
+         "ldate": 1743695066,
+         "upgrade": 25,
+         "price": 600
+      },
+      {
+         "id": "6005797617768858105",
+         "title": "Artisan Brick",
+         "fdate": 1743461874,
+         "ldate": 1743463876,
+         "upgrade": 1000,
+         "price": 13872
+      },
+      {
+         "id": "6005564615793050414",
+         "title": "Instant Ramen",
+         "fdate": 1743461870,
+         "ldate": 1743518980,
+         "upgrade": 25,
+         "price": 470
+      },
+      {
+         "id": "6005659564635063386",
+         "title": "Jack-in-the-Box",
+         "fdate": 1743461867,
+         "ldate": 1743497806,
+         "upgrade": 25,
+         "price": 980.0000000000001
+      },
+      {
+         "id": "6003456431095808759",
+         "title": "Faith Amulet",
+         "fdate": 1743364191,
+         "ldate": 1743423783,
+         "upgrade": 25,
+         "price": 760
+      },
+      {
+         "id": "5998981470310368313",
+         "title": "Moon Pendant",
+         "fdate": 1743282829,
+         "ldate": 1743285834,
+         "upgrade": 25,
+         "price": 1108
+      },
+      {
+         "id": "5960747083030856414",
+         "title": "Clover Pin",
+         "fdate": 1742157554,
+         "ldate": 1742293981,
+         "upgrade": 25,
+         "price": 574
+      },
+      {
+         "id": "5963238670868677492",
+         "title": "Money Pot",
+         "fdate": 1742157551,
+         "ldate": 1742922966,
+         "upgrade": 25,
+         "price": 930.0000000000001
+      },
+      {
+         "id": "5933543975653737112",
+         "title": "Whip Cupcake",
+         "fdate": 1741383711,
+         "ldate": 1741414188,
+         "upgrade": 25,
+         "price": 700
+      },
+      {
+         "id": "5935877878062253519",
+         "title": "Mousse Cake",
+         "fdate": 1741383711,
+         "ldate": 1741427247,
+         "upgrade": 25,
+         "price": 800
+      },
+      {
+         "id": "5933737850477478635",
+         "title": "Pretty Posy",
+         "fdate": 1741383711,
+         "ldate": 1741460160,
+         "upgrade": 25,
+         "price": 600
+      },
+      {
+         "id": "5933937398953018107",
+         "title": "Ionic Dryer",
+         "fdate": 1741383710,
+         "ldate": 1741928790,
+         "upgrade": 200,
+         "price": 2926
+      },
+      {
+         "id": "5933770397739647689",
+         "title": "",
+         "fdate": 1741383710,
+         "ldate": 1741431762,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5933793770951673155",
+         "title": "Neko Helmet",
+         "fdate": 1741383707,
+         "ldate": 1741646290,
+         "upgrade": 500,
+         "price": 7056
+      },
+      {
+         "id": "5913351908466098791",
+         "title": "",
+         "fdate": 1740777774,
+         "ldate": 1741419070,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5895603153683874485",
+         "title": "Fresh Socks",
+         "fdate": 1740265560,
+         "ldate": 1740468591,
+         "upgrade": 25,
+         "price": 798
+      },
+      {
+         "id": "5895544372761461960",
+         "title": "Bow Tie",
+         "fdate": 1740265559,
+         "ldate": 1742296998,
+         "upgrade": 25,
+         "price": 1100
+      },
+      {
+         "id": "5897593557492957738",
+         "title": "Top Hat",
+         "fdate": 1740265557,
+         "ldate": 1740981104,
+         "upgrade": 200,
+         "price": 1988
+      },
+      {
+         "id": "5895328365971244193",
+         "title": "Heroic Helmet",
+         "fdate": 1740265556,
+         "ldate": 1741590246,
+         "upgrade": 1000,
+         "price": 49896
+      },
+      {
+         "id": "5897581235231785485",
+         "title": "Light Sword",
+         "fdate": 1740265555,
+         "ldate": 1740393113,
+         "upgrade": 25,
+         "price": 1300
+      },
+      {
+         "id": "5895518353849582541",
+         "title": "Mighty Arm",
+         "fdate": 1740265551,
+         "ldate": 1740747848,
+         "upgrade": 2000,
+         "price": 34742
+      },
+      {
+         "id": "5870972044522291836",
+         "title": "Input Key",
+         "fdate": 1739537394,
+         "ldate": 1739873806,
+         "upgrade": 25,
+         "price": 1100
+      },
+      {
+         "id": "5871002671934079382",
+         "title": "Lush Bouquet",
+         "fdate": 1739537394,
+         "ldate": 1740613226,
+         "upgrade": 25,
+         "price": 1100
+      },
+      {
+         "id": "5870862540036113469",
+         "title": "Joyful Bundle",
+         "fdate": 1739537394,
+         "ldate": 1741615284,
+         "upgrade": 25,
+         "price": 1340
+      },
+      {
+         "id": "5872744075014177223",
+         "title": "",
+         "fdate": 1739537394,
+         "ldate": 1739645143,
+         "upgrade": null,
+         "price": null
+      },
+      {
+         "id": "5870720080265871962",
+         "title": "Nail Bracelet",
+         "fdate": 1739537383,
+         "ldate": 1739538617,
+         "upgrade": 2000,
+         "price": 21512
+      },
+      {
+         "id": "5870661333703197240",
+         "title": "Bonded Ring",
+         "fdate": 1739537381,
+         "ldate": 1739544552,
+         "upgrade": 1000,
+         "price": 9854
+      },
+      {
+         "id": "5868220813026526561",
+         "title": "Toy Bear",
+         "fdate": 1739491301,
+         "ldate": 1739504189,
+         "upgrade": 100,
+         "price": 6766
+      },
+      {
+         "id": "5870784783948186838",
+         "title": "Restless Jar",
+         "fdate": 1739491300,
+         "ldate": 1739521482,
+         "upgrade": 25,
+         "price": 1140
+      },
+      {
+         "id": "5870947077877400011",
+         "title": "Sky Stilettos",
+         "fdate": 1739491300,
+         "ldate": 1739517842,
+         "upgrade": 25,
+         "price": 1966
+      },
+      {
+         "id": "5868348541058942091",
+         "title": "Love Potion",
+         "fdate": 1739491290,
+         "ldate": 1739501251,
+         "upgrade": 200,
+         "price": 2582
+      },
+      {
+         "id": "5868503709637411929",
+         "title": "Diamond Ring",
+         "fdate": 1739491290,
+         "ldate": 1739495238,
+         "upgrade": 200,
+         "price": 5090
+      },
+      {
+         "id": "5868595669182186720",
+         "title": "Valentine Box",
+         "fdate": 1739491289,
+         "ldate": 1739513770,
+         "upgrade": 25,
+         "price": 1798
+      },
+      {
+         "id": "5868561433997870501",
+         "title": "Cupid Charm",
+         "fdate": 1739491289,
+         "ldate": 1739507093,
+         "upgrade": 100,
+         "price": 3434.0000000000005
+      },
+      {
+         "id": "5868455043362980631",
+         "title": "Heart Locket",
+         "fdate": 1739491288,
+         "ldate": 1739491621,
+         "upgrade": 2000,
+         "price": 413870
+      },
+      {
+         "id": "5868659926187901653",
+         "title": "Loot Bag",
+         "fdate": 1739491284,
+         "ldate": 1739492747,
+         "upgrade": 500,
+         "price": 20580
+      },
+      {
+         "id": "6028283532500009446",
+         "title": "Big Year",
+         "fdate": 1735738673,
+         "ldate": 1736768083,
+         "upgrade": 25,
+         "price": 798
+      },
+      {
+         "id": "6028426950047957932",
+         "title": "Lunar Snake",
+         "fdate": 1735738672,
+         "ldate": 1736028316,
+         "upgrade": 25,
+         "price": 600
+      },
+      {
+         "id": "6023752243218481939",
+         "title": "Tama Gadget",
+         "fdate": 1735589167,
+         "ldate": 1735877417,
+         "upgrade": 25,
+         "price": 974
+      },
+      {
+         "id": "6023917088358269866",
+         "title": "Pet Snake",
+         "fdate": 1735589166,
+         "ldate": 1735677389,
+         "upgrade": 25,
+         "price": 500
+      },
+      {
+         "id": "6023679164349940429",
+         "title": "Snake Box",
+         "fdate": 1735589166,
+         "ldate": 1735688014,
+         "upgrade": 25,
+         "price": 444.00000000000006
+      },
+      {
+         "id": "6003735372041814769",
+         "title": "Holiday Drink",
+         "fdate": 1734987446,
+         "ldate": 1735463737,
+         "upgrade": 25,
+         "price": 1258
+      },
+      {
+         "id": "6001473264306619020",
+         "title": "Jingle Bells",
+         "fdate": 1734987446,
+         "ldate": 1735577344,
+         "upgrade": 25,
+         "price": 1100
+      },
+      {
+         "id": "6001538689543439169",
+         "title": "Cookie Heart",
+         "fdate": 1734987445,
+         "ldate": 1735407784,
+         "upgrade": 25,
+         "price": 1074
+      },
+      {
+         "id": "6003643167683903930",
+         "title": "Party Sparkler",
+         "fdate": 1734987445,
+         "ldate": 1735539319,
+         "upgrade": 25,
+         "price": 1172
+      },
+      {
+         "id": "6003373314888696650",
+         "title": "Candy Cane",
+         "fdate": 1734987444,
+         "ldate": 1735465099,
+         "upgrade": 25,
+         "price": 866
+      },
+      {
+         "id": "6003767644426076664",
+         "title": "Xmas Stocking",
+         "fdate": 1734987444,
+         "ldate": 1735462870,
+         "upgrade": 25,
+         "price": 600
+      },
+      {
+         "id": "5983471780763796287",
+         "title": "Santa Hat",
+         "fdate": 1734387541,
+         "ldate": 1735401678,
+         "upgrade": 25,
+         "price": 1400
+      },
+      {
+         "id": "5981132629905245483",
+         "title": "Snow Globe",
+         "fdate": 1734387541,
+         "ldate": 1735571771,
+         "upgrade": 25,
+         "price": 1450
+      },
+      {
+         "id": "5980789805615678057",
+         "title": "Snow Mittens",
+         "fdate": 1734387541,
+         "ldate": 1735579603,
+         "upgrade": 25,
+         "price": 1278
+      },
+      {
+         "id": "5981026247860290310",
+         "title": "Sleigh Bell",
+         "fdate": 1734387541,
+         "ldate": 1735725962,
+         "upgrade": 25,
+         "price": 1818
+      },
+      {
+         "id": "5983484377902875708",
+         "title": "Ginger Cookie",
+         "fdate": 1734387540,
+         "ldate": 1734549219,
+         "upgrade": 25,
+         "price": 1170
+      },
+      {
+         "id": "5983259145522906006",
+         "title": "Winter Wreath",
+         "fdate": 1734387540,
+         "ldate": 1734729553,
+         "upgrade": 25,
+         "price": 1088
+      },
+      {
+         "id": "5936013938331222567",
+         "title": "Plush Pepe",
+         "fdate": 1733004030,
+         "ldate": 1733038961,
+         "upgrade": 25,
+         "price": 1594200
+      },
+      {
+         "id": "5936085638515261992",
+         "title": "Signet Ring",
+         "fdate": 1733004029,
+         "ldate": 1733777181,
+         "upgrade": 25,
+         "price": 6210
+      },
+      {
+         "id": "5933531623327795414",
+         "title": "Genie Lamp",
+         "fdate": 1733004029,
+         "ldate": 1735407910,
+         "upgrade": 25,
+         "price": 9086
+      },
+      {
+         "id": "5933629604416717361",
+         "title": "Astral Shard",
+         "fdate": 1733004029,
+         "ldate": 1733661730,
+         "upgrade": 25,
+         "price": 31034.000000000004
+      },
+      {
+         "id": "5933671725160989227",
+         "title": "Precious Peach",
+         "fdate": 1733004029,
+         "ldate": 1733556544,
+         "upgrade": 25,
+         "price": 72442
+      },
+      {
+         "id": "5936017773737018241",
+         "title": "Star Notepad",
+         "fdate": 1733004028,
+         "ldate": 1734377062,
+         "upgrade": 25,
+         "price": 840
+      },
+      {
+         "id": "5935936766358847989",
+         "title": "Bunny Muffin",
+         "fdate": 1733004028,
+         "ldate": 1733385530,
+         "upgrade": 25,
+         "price": 1432
+      },
+      {
+         "id": "5936043693864651359",
+         "title": "Swiss Watch",
+         "fdate": 1733004028,
+         "ldate": 1733773099,
+         "upgrade": 25,
+         "price": 8466
+      },
+      {
+         "id": "5933590374185435592",
+         "title": "Jester Hat",
+         "fdate": 1733004027,
+         "ldate": 1734258596,
+         "upgrade": 25,
+         "price": 760
+      },
+      {
+         "id": "5913517067138499193",
+         "title": "Perfume Bottle",
+         "fdate": 1732403677,
+         "ldate": 1732989910,
+         "upgrade": 25,
+         "price": 16488
+      },
+      {
+         "id": "5915521180483191380",
+         "title": "Durov’s Cap",
+         "fdate": 1732403676,
+         "ldate": 1732447784,
+         "upgrade": 25,
+         "price": 149068
+      },
+      {
+         "id": "5915550639663874519",
+         "title": "Love Candle",
+         "fdate": 1732403670,
+         "ldate": 1732977231,
+         "upgrade": 25,
+         "price": 1940.0000000000002
+      },
+      {
+         "id": "5915733223018594841",
+         "title": "Hanging Star",
+         "fdate": 1732403669,
+         "ldate": 1732735534,
+         "upgrade": 25,
+         "price": 1450
+      },
+      {
+         "id": "5913442287462908725",
+         "title": "Spiced Wine",
+         "fdate": 1732403668,
+         "ldate": 1732811136,
+         "upgrade": 25,
+         "price": 860
+      },
+      {
+         "id": "5915502858152706668",
+         "title": "Jelly Bunny",
+         "fdate": 1732403668,
+         "ldate": 1732574211,
+         "upgrade": 25,
+         "price": 1170
+      },
+      {
+         "id": "5882252952218894938",
+         "title": "Berry Box",
+         "fdate": 1731450333,
+         "ldate": 1732173047,
+         "upgrade": 25,
+         "price": 1450
+      },
+      {
+         "id": "5879737836550226478",
+         "title": "Mini Oscar",
+         "fdate": 1731450332,
+         "ldate": 1731991786,
+         "upgrade": 25,
+         "price": 17174
+      },
+      {
+         "id": "5882125812596999035",
+         "title": "Eternal Rose",
+         "fdate": 1731450332,
+         "ldate": 1731700606,
+         "upgrade": 25,
+         "price": 4228
+      },
+      {
+         "id": "5857140566201991735",
+         "title": "Vintage Cigar",
+         "fdate": 1730762220,
+         "ldate": 1732129103,
+         "upgrade": 25,
+         "price": 5954
+      },
+      {
+         "id": "5856973938650776169",
+         "title": "Record Player",
+         "fdate": 1730762220,
+         "ldate": 1734954180,
+         "upgrade": 25,
+         "price": 2670
+      },
+      {
+         "id": "5859442703032386168",
+         "title": "Gem Signet",
+         "fdate": 1730762197,
+         "ldate": 1731100683,
+         "upgrade": 100,
+         "price": 12210
+      },
+      {
+         "id": "5845776576658015084",
+         "title": "Kissed Frog",
+         "fdate": 1730412830,
+         "ldate": 1730415413,
+         "upgrade": 25,
+         "price": 7722
+      },
+      {
+         "id": "5846192273657692751",
+         "title": "Electric Skull",
+         "fdate": 1730412825,
+         "ldate": 1730414702,
+         "upgrade": 25,
+         "price": 5750
+      },
+      {
+         "id": "5846226946928673709",
+         "title": "Magic Potion",
+         "fdate": 1730412824,
+         "ldate": 1730413417,
+         "upgrade": 25,
+         "price": 14802.000000000002
+      },
+      {
+         "id": "5843762284240831056",
+         "title": "Ion Gem",
+         "fdate": 1730318919,
+         "ldate": 1730320860,
+         "upgrade": 25,
+         "price": 15714.000000000002
+      },
+      {
+         "id": "5841689550203650524",
+         "title": "Sharp Tongue",
+         "fdate": 1730318897,
+         "ldate": 1730332169,
+         "upgrade": 25,
+         "price": 8050
+      },
+      {
+         "id": "5841632504448025405",
+         "title": "Mad Pumpkin",
+         "fdate": 1730318895,
+         "ldate": 1730412241,
+         "upgrade": 25,
+         "price": 2690
+      },
+      {
+         "id": "5841336413697606412",
+         "title": "Crystal Ball",
+         "fdate": 1730234742,
+         "ldate": 1730240895,
+         "upgrade": 25,
+         "price": 2042.0000000000002
+      },
+      {
+         "id": "5839038009193792264",
+         "title": "Skull Flower",
+         "fdate": 1730234737,
+         "ldate": 1730309395,
+         "upgrade": 25,
+         "price": 2022
+      },
+      {
+         "id": "5841391256135008713",
+         "title": "Trapped Heart",
+         "fdate": 1730234716,
+         "ldate": 1730272061,
+         "upgrade": 25,
+         "price": 2174
+      },
+      {
+         "id": "5837063436634161765",
+         "title": "Flying Broom",
+         "fdate": 1730158071,
+         "ldate": 1730196770,
+         "upgrade": 25,
+         "price": 2026.0000000000002
+      },
+      {
+         "id": "5836780359634649414",
+         "title": "Voodoo Doll",
+         "fdate": 1730158058,
+         "ldate": 1730185812,
+         "upgrade": 25,
+         "price": 5358
+      },
+      {
+         "id": "5837059369300132790",
+         "title": "Scared Cat",
+         "fdate": 1730158058,
+         "ldate": 1730166600,
+         "upgrade": 25,
+         "price": 14802.000000000002
+      },
+      {
+         "id": "5825480571261813595",
+         "title": "Evil Eye",
+         "fdate": 1729800277,
+         "ldate": 1730476771,
+         "upgrade": 25,
+         "price": 1450
+      },
+      {
+         "id": "5825801628657124140",
+         "title": "Hex Pot",
+         "fdate": 1729800262,
+         "ldate": 1730592200,
+         "upgrade": 25,
+         "price": 900
+      },
+      {
+         "id": "5825895989088617224",
+         "title": "Hypno Lollipop",
+         "fdate": 1729800251,
+         "ldate": 1732723004,
+         "upgrade": 25,
+         "price": 892
+      },
+      {
+         "id": "5821261908354794038",
+         "title": "Spy Agaric",
+         "fdate": 1729714350,
+         "ldate": 1729748685,
+         "upgrade": 25,
+         "price": 1376
+      },
+      {
+         "id": "5821384757304362229",
+         "title": "Witch Hat",
+         "fdate": 1729714334,
+         "ldate": 1729773270,
+         "upgrade": 25,
+         "price": 1180
+      },
+      {
+         "id": "5821205665758053411",
+         "title": "Eternal Candle",
+         "fdate": 1729714334,
+         "ldate": 1729718064,
+         "upgrade": 25,
+         "price": 1300
+      },
+      {
+         "id": "5782988952268964995",
+         "title": "Desk Calendar",
+         "fdate": 1728581786,
+         "ldate": 1742642625,
+         "upgrade": 25,
+         "price": 598
+      },
+      {
+         "id": "5782984811920491178",
+         "title": "B-Day Candle",
+         "fdate": 1728581776,
+         "ldate": 1749502434,
+         "upgrade": 25,
+         "price": 398
+      },
+      {
+         "id": "5783075783622787539",
+         "title": "Homemade Cake",
+         "fdate": 1728581687,
+         "ldate": 1743332994,
+         "upgrade": 25,
+         "price": 592
+      },
+      {
+         "id": "5170594532177215681",
+         "title": "Lol Pop",
+         "fdate": 1727522820,
+         "ldate": 1728164730,
+         "upgrade": 25,
+         "price": 500
+      },
+      {
+         "id": "5167939598143193218",
+         "title": "Sakura Flower",
+         "fdate": 1727511714,
+         "ldate": 1728157674,
+         "upgrade": 25,
+         "price": 1450
+      },
+      {
+         "id": "5882260270843168924",
+         "title": "UFC Mystery Box",
+         "fdate": null,
+         "ldate": null,
+         "upgrade": null,
+         "price": null
+      }
+   ]
+}

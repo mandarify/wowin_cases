@@ -1,0 +1,33 @@
+/* =================================
+   Topic
+==================================== */
+
+.topic {
+   padding: 0px 10px 10px 10px;
+   width: 100%;
+
+   font-size: 20px;
+   font-weight: 800;
+
+   text-transform: uppercase;
+
+   color: var(--app-text-color);
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

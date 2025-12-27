@@ -1,0 +1,63 @@
+/* =================================
+   HELP
+==================================== */
+
+/* Блокировка скролла. */
+.no-scroll {
+   overflow: hidden;
+}
+
+/* Включает взаимодействие с элементов и его масу. */
+._use {
+   -ms-user-select: auto;
+   -moz-user-select: auto;
+   -webkit-user-select: auto;
+
+   pointer-events: all;
+   user-select: auto;
+   cursor: auto;
+}
+
+/* Отключает полностью взаимодействие с элементов и его масу. */
+._unuse {
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+
+   pointer-events: none;
+   user-select: none;
+   cursor: none;
+}
+
+/* Запрещает выделять и тянуть элемент */
+._unselect {
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+
+   pointer-events: none;
+   user-select: none;
+}
+
+._empty {
+   pointer-events: none;
+}
+
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

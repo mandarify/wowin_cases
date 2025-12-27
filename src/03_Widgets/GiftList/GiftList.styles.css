@@ -1,0 +1,120 @@
+/* =================================
+   GiftList
+==================================== */
+
+.gifts-list {
+   padding: 10px;
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+}
+
+.gifts-list:empty {
+   position: relative;
+   padding: 10px;
+}
+
+.gifts-list:empty::after {
+   content: "NO GIFTS";
+   width: 100%;
+   height: 100px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* =================================
+   Search
+==================================== */
+
+.gifts-search {
+   padding: 5px 10px;
+   width: 100%;
+   height: 50px;
+}
+
+.gifts-search-input {
+   padding: 4px 12px;
+   width: 100%;
+   height: 100%;
+
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--app-text-color-2);
+
+   border: none;
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.gifts-search-input::placeholder {
+
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--app-text-color-3);
+}
+
+
+/* =================================
+   Sort
+==================================== */
+
+.gifts-sort {
+   padding: 5px 10px;
+   width: 100%;
+   height: 40px;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 6px;
+}
+
+.gifts-sort-item {
+   padding: 0 10px;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--app-text-color-3);
+
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255, 0.1);
+
+   cursor: pointer;
+}
+
+.gifts-sort-item_active {
+   color: var(--app-text-color-6);
+   background-color: var(--app-bg-color-2);
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

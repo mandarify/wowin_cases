@@ -1,0 +1,104 @@
+/* =================================
+   ROOT
+==================================== */
+
+:root {
+
+   /* +++++ NORMALIZE +++++ */
+
+   /* Шрифты */
+   --app-font-family: "Rubik", sans-serif;
+   --app-font-family-mono: "JetBrains Mono", sans-serif;
+   --app-font-size: 12px;
+   --app-font-weight: 600;
+   --app-font-style: normal;
+
+   /* Убирает синий фон объектов которые выделяются */
+   --app-tap-bg: rgba(0, 0, 0, 0);
+
+   /* Цвет выделенного текста */
+   --app-text-bg-selection: rgba(255, 255, 255, 0.3);
+
+   /* ===== NORMALIZE ===== */
+
+   /* +++++ Z-INDEXES +++++ */
+
+   --app-z-1: 100;
+   --app-z-2: 200;
+   --app-z-3: 300;
+   --app-z-4: 400;
+   --app-z-5: 500;
+
+   /* ===== Z-INDEXES ===== */
+
+   /* TEXT */
+   --app-text-color: rgba(255, 247, 221, 1);
+   --app-text-color-1: rgba(255, 247, 221, 0.6);
+   --app-text-color-2: rgba(188, 188, 188, 1);
+   --app-text-color-3: rgba(188, 188, 188, 0.6);
+   --app-text-color-4: #FF9705;
+   --app-text-color-5: #ffb930;
+   --app-text-color-6: #101010;
+
+   /* BG */
+   --app-bg-color-1: #101010;
+   --app-bg-color-2: #FF9705;
+   --app-bg-color-3: #ffb930;
+}
+
+/* =================================
+   RARITY
+==================================== */
+
+[data-rarity="legendary"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #744200;
+   --rarity-color-bg-edge: #E49439;
+   --rarity-color-bg-center: #FFC482;
+}
+
+[data-rarity="epic"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #741B1B;
+   --rarity-color-bg-edge: #F04646;
+   --rarity-color-bg-center: #FD7F7F;
+}
+
+[data-rarity="rare"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #4E1455;
+   --rarity-color-bg-edge: #C64DD3;
+   --rarity-color-bg-center: #F7ADFF;
+}
+
+[data-rarity="unique"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #391D57;
+   --rarity-color-bg-edge: #A04FF6;
+   --rarity-color-bg-center: #CC9CFF;
+}
+
+[data-rarity="common"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #0F3258;
+   --rarity-color-bg-edge: #5E98D9;
+   --rarity-color-bg-center: #DAECFF;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

@@ -1,0 +1,121 @@
+/* =================================
+   Gift
+==================================== */
+
+.gift {
+   padding: 5px 12px;
+   width: 100%;
+   height: 50px;
+
+   display: grid;
+   grid-template-columns: 40px minmax(auto, 120px) 100px;
+   grid-template-rows: 40px;
+   gap: 12px;
+   align-items: center;
+   justify-content: start;
+
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255, 0.1);
+   cursor: pointer;
+}
+
+.gift:hover {
+   background-color: rgba(199, 255, 102, 0.1);
+}
+
+/* =================================
+   Gift Img
+==================================== */
+
+.gift-img-container {
+   height: 100%;
+   aspect-ratio: 1/1;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.gift-img {
+   width: 100%;
+   height: 100%;
+}
+
+
+/* =================================
+   Gift Title
+==================================== */
+
+.gift-data-container {
+   padding: 6px 0;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: space-between;
+   gap: 5px;
+}
+
+.gift-title {
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--app-text-color);
+}
+
+.gift-title mark {
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--app-text-color-4);
+
+   background-color: transparent;
+}
+
+.gift-date {
+   font-size: 10px;
+   font-weight: 500;
+   color: var(--app-text-color-1);
+}
+
+/* =================================
+   Gift Price
+==================================== */
+
+.gift-price {
+   padding: 5px 0;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   justify-content: space-between;
+}
+
+.gift-price-usd {
+   font-size: 12px;
+   font-weight: 500;
+   color: var(--app-text-color-1);
+}
+
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {
+   .gift {
+      grid-template-columns: 40px minmax(auto, 1fr) 100px;
+   }
+}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

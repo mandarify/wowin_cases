@@ -1,0 +1,299 @@
+/* =================================
+   SVG SPAN ICONS
+
+   Переменные:
+
+   --svg-icon-color
+
+   Классы:
+   .svg-icon .svg-icon-[size] .svg-icon-[color] .svg-model-[name]
+   .svg-icon-color .svg-icon-[size] .svg-model-[name]
+
+==================================== */
+
+.svg-icon {
+   display: inline-block;
+   background-size: cover;
+
+   color: var(--svg-icon-color);
+   background-color: currentColor;
+
+   -webkit-mask-size: contain;
+   -webkit-mask-repeat: no-repeat;
+   -webkit-mask-position: center;
+
+   mask-size: contain;
+   mask-repeat: no-repeat;
+   mask-position: center;
+
+   /* Отключить контекстное меню на долгий тап. */
+   -webkit-touch-callout: none;
+
+   /* Отключить выделение текста. */
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+   flex: 0 0 auto;
+}
+
+.svg-icon-color {
+   display: inline-block;
+
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+
+   /* Отключить контекстное меню на долгий тап. */
+   -webkit-touch-callout: none;
+
+   /* Отключить выделение текста. */
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+   flex: 0 0 auto;
+}
+
+/* =================================
+   SIZES
+==================================== */
+
+.svg-icon-fill {
+   width: 100%;
+   height: 100%;
+}
+
+.svg-icon-10 {
+   width: 10px;
+   height: 10px;
+}
+
+.svg-icon-12 {
+   width: 12px;
+   height: 12px;
+}
+
+.svg-icon-14 {
+   width: 14px;
+   height: 14px;
+}
+
+.svg-icon-16 {
+   width: 16px;
+   height: 16px;
+}
+
+.svg-icon-18 {
+   width: 18px;
+   height: 18px;
+}
+
+.svg-icon-20 {
+   width: 20px;
+   height: 20px;
+}
+
+.svg-icon-22 {
+   width: 22px;
+   height: 22px;
+}
+
+.svg-icon-24 {
+   width: 24px;
+   height: 24px;
+}
+
+.svg-icon-26 {
+   width: 26px;
+   height: 26px;
+}
+
+.svg-icon-28 {
+   width: 28px;
+   height: 28px;
+}
+
+.svg-icon-30 {
+   width: 30px;
+   height: 30px;
+}
+
+/* =================================
+   COLORS
+==================================== */
+
+.svg-icon-white {
+   --svg-icon-color: rgba(255, 255, 255, 1);
+}
+
+.svg-icon-black {
+   --svg-icon-color: rgba(0, 0, 0, 1);
+}
+
+/* =================================
+   MODELS
+==================================== */
+
+/* CHESS */
+
+.svg-model-chess-pawn {
+   -webkit-mask-image: url("../03_icons/svg/chess_pawn.svg");
+   mask-image: url("../03_icons/svg/chess_pawn.svg");
+}
+
+.svg-model-chess-knight {
+   -webkit-mask-image: url("../03_icons/svg/chess_knight.svg");
+   mask-image: url("../03_icons/svg/chess_knight.svg");
+}
+
+.svg-model-chess-bishop {
+   -webkit-mask-image: url("../03_icons/svg/chess_bishop.svg");
+   mask-image: url("../03_icons/svg/chess_bishop.svg");
+}
+
+.svg-model-chess-rook {
+   -webkit-mask-image: url("../03_icons/svg/chess_rook.svg");
+   mask-image: url("../03_icons/svg/chess_rook.svg");
+}
+
+.svg-model-chess-queen {
+   -webkit-mask-image: url("../03_icons/svg/chess_queen.svg");
+   mask-image: url("../03_icons/svg/chess_queen.svg");
+}
+
+.svg-model-chess-king {
+   -webkit-mask-image: url("../03_icons/svg/chess_king.svg");
+   mask-image: url("../03_icons/svg/chess_king.svg");
+}
+
+/* ICONS */
+
+.svg-model-box {
+   -webkit-mask-image: url("../03_icons/svg/box.svg");
+   mask-image: url("../03_icons/svg/box.svg");
+}
+
+.svg-model-basket {
+   -webkit-mask-image: url("../03_icons/svg/basket.svg");
+   mask-image: url("../03_icons/svg/basket.svg");
+}
+
+.svg-model-basket-plus {
+   -webkit-mask-image: url("../03_icons/svg/basket_plus.svg");
+   mask-image: url("../03_icons/svg/basket_plus.svg");
+}
+
+.svg-model-cup {
+   -webkit-mask-image: url("../03_icons/svg/cup.svg");
+   mask-image: url("../03_icons/svg/cup.svg");
+}
+
+.svg-model-fire {
+   -webkit-mask-image: url("../03_icons/svg/fire.svg");
+   mask-image: url("../03_icons/svg/fire.svg");
+}
+
+.svg-model-key {
+   -webkit-mask-image: url("../03_icons/svg/key.svg");
+   mask-image: url("../03_icons/svg/key.svg");
+}
+
+.svg-model-lightning {
+   -webkit-mask-image: url("../03_icons/svg/lightning.svg");
+   mask-image: url("../03_icons/svg/lightning.svg");
+}
+
+.svg-model-live {
+   -webkit-mask-image: url("../03_icons/svg/live.svg");
+   mask-image: url("../03_icons/svg/live.svg");
+}
+
+.svg-model-notification {
+   -webkit-mask-image: url("../03_icons/svg/notification.svg");
+   mask-image: url("../03_icons/svg/notification.svg");
+}
+
+.svg-model-settings {
+   -webkit-mask-image: url("../03_icons/svg/settings.svg");
+   mask-image: url("../03_icons/svg/settings.svg");
+}
+
+.svg-model-shop {
+   -webkit-mask-image: url("../03_icons/svg/shop.svg");
+   mask-image: url("../03_icons/svg/shop.svg");
+}
+
+.svg-model-star {
+   -webkit-mask-image: url("../03_icons/svg/star.svg");
+   mask-image: url("../03_icons/svg/star.svg");
+}
+
+.svg-model-swords {
+   -webkit-mask-image: url("../03_icons/svg/swords.svg");
+   mask-image: url("../03_icons/svg/swords.svg");
+}
+
+.svg-model-wallet {
+   -webkit-mask-image: url("../03_icons/svg/wallet.svg");
+   mask-image: url("../03_icons/svg/wallet.svg");
+}
+
+.svg-model-clock {
+   -webkit-mask-image: url("../03_icons/svg/clock.svg");
+   mask-image: url("../03_icons/svg/clock.svg");
+}
+
+.svg-model-img {
+   -webkit-mask-image: url("../03_icons/svg/img.svg");
+   mask-image: url("../03_icons/svg/img.svg");
+}
+
+/* Big Elements */
+
+.svg-model-bigplus {
+   -webkit-mask-image: url("../03_icons/svg/bigplus.svg");
+   mask-image: url("../03_icons/svg/bigplus.svg");
+}
+
+/* COLORS */
+
+.svg-model-legendary {
+   background-image: url("../03_icons/colors/legendary.svg");
+}
+
+.svg-model-epic {
+   background-image: url("../03_icons/colors/epic.svg");
+}
+
+.svg-model-rare {
+   background-image: url("../03_icons/colors/rare.svg");
+}
+
+.svg-model-unique {
+   background-image: url("../03_icons/colors/unique.svg");
+}
+
+.svg-model-common {
+   background-image: url("../03_icons/colors/common.svg");
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */
