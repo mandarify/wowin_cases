@@ -27,7 +27,7 @@ import { Gift } from "../../05_Shared/ui";
 
 const getGifts = async (): Promise<TGiftsSet | null> => {
    try {
-      const res = await fetch("/gifts/mini.json", { method: "GET" });
+      const res = await fetch("/wowin_cases/gifts/mini.json", { method: "GET" });
       const data = await res.json() as TGiftsSet;
       return data;
    } catch (error) {
@@ -60,15 +60,15 @@ const sortGifts = (
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 
-export interface IGiftList {
+// export interface IGiftList {
 
-};
+// };
 
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 
-const GiftList = (props: IGiftList): JSX.Element => {
+const GiftList = (): JSX.Element => {
 
    const [gifts, setGifts] = useState<TGiftData[]>([]);
 

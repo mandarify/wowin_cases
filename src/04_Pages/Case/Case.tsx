@@ -32,7 +32,7 @@ export interface ICasePage {
 
 const CasePage = ({ isNew }: ICasePage): JSX.Element => {
    return (
-      <div className="page-case"></div>
+      <div className="page-case" data-new={isNew}></div>
    );
 };
 

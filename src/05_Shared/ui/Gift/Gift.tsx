@@ -25,7 +25,7 @@ import { formatUnixDate, splitKeepMark } from "../../funcs/global";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-const getGiftImg = (id: string) => `/gifts/files/${id}/webp256.webp`;
+const getGiftImg = (id: string) => `/wowin_cases/gifts/files/${id}/webp256.webp`;
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
@@ -39,7 +39,7 @@ const Gift = React.memo(({ data, mark, clickAction }: IGift): JSX.Element => {
 
    const onClick = useCallback(() => {
       clickAction(data);
-   }, [clickAction]);
+   }, [clickAction, data]);
 
    return (
       <div className="gift" data-title={data.title || "no title"} onClick={onClick}>

@@ -25,7 +25,7 @@ import { BrowserRouter } from "react-router-dom";
 
 const App = (): JSX.Element => {
    return (
-      <BrowserRouter>
+      <BrowserRouter basename="/wowin_cases">
          <AppRoutes />
       </BrowserRouter>
    );
