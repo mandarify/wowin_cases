@@ -2,16 +2,17 @@
    Home Page
 ==================================== */
 
-.page-home {
+.page-cases {
    width: 100%;
 
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   gap: 20px;
 }
 
-.page-home-block {
+.page-cases-block {
    width: 100%;
    height: max-content;
 
@@ -22,6 +23,14 @@
    gap: 10px;
 }
 
+.button-list-h {
+   width: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 10px;
+}
 
 /* =================================
    MEDIA

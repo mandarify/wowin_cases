@@ -3,7 +3,6 @@
 ==================================== */
 
 .case-preview-list {
-   padding: 10px;
    width: 100%;
 
    display: flex;
@@ -15,7 +14,6 @@
 
 .case-preview-list:empty {
    position: relative;
-   padding: 10px;
 }
 
 .case-preview-list:empty::after {

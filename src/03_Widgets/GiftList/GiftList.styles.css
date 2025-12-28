@@ -3,7 +3,6 @@
 ==================================== */
 
 .gifts-list {
-   padding: 10px;
    width: 100%;
 
    display: flex;
@@ -15,7 +14,6 @@
 
 .gifts-list:empty {
    position: relative;
-   padding: 10px;
 }
 
 .gifts-list:empty::after {
@@ -36,9 +34,8 @@
 ==================================== */
 
 .gifts-search {
-   padding: 5px 10px;
    width: 100%;
-   height: 50px;
+   height: 40px;
 }
 
 .gifts-search-input {
@@ -68,9 +65,8 @@
 ==================================== */
 
 .gifts-sort {
-   padding: 5px 10px;
    width: 100%;
-   height: 40px;
+   height: 30px;
 
    display: flex;
    align-items: center;

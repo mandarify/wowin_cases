@@ -15,6 +15,7 @@ import type { JSX } from "react";
 
 // ########## КОМПОНЕНТЫ
 import { Outlet } from "react-router-dom";
+import { Menu } from "../../03_Widgets";
 
 // ########## МОДУЛИ
 
@@ -24,15 +25,19 @@ import { Outlet } from "react-router-dom";
 
 const Layout = (): JSX.Element => {
    return (
-      <div className="app">
-         <div className="app-container">
-            <main className="main">
+      <>
+         <div className="app">
+            <div className="app-container">
+               <main className="main">
 
-               <Outlet />
+                  <Outlet />
 
-            </main>
+               </main>
+            </div>
          </div>
-      </div>
+
+         <Menu />
+      </>
    );
 };
 

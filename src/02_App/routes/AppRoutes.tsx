@@ -36,9 +36,12 @@ const AppRoutes = (): JSX.Element => {
 
             <Route path="/" element={<Navigate to="/home" replace />} />
 
-            <Route path="/home" element={<Pages.Home />} />
+            <Route path="home" element={<Pages.Home />} />
 
-            <Route path="/case/:id" element={<Pages.Case />} />
+            <Route path="cases">
+               <Route index element={<Pages.Cases />} />
+               <Route path=":id" element={<Pages.Case />} />
+            </Route>
 
          </Route>
 

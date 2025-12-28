@@ -52,7 +52,7 @@ body {
 
 .main {
    position: relative;
-   padding: 40px 5px;
+   padding: 40px 15px 100px 15px;
    min-height: 100lvh;
    width: 100%;
 }

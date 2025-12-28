@@ -1,23 +1,16 @@
 /*
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 
-  МОДУЛЬ: Pages
+  КОМПОНЕНТ: Types
 
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-import HomePage from "./Home/Home";
-import CasesPage from "./Cases/CasesPage";
-import CasePage from "./Case/Case";
-
+import type { TCase } from "../../types/global";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-const Pages = {
-   Home: HomePage,
-   Cases: CasesPage,
-   Case: CasePage,
+export type CaseEditorContextType = {
+   draft: TCase;
+   update: <K extends keyof TCase>(key: K, value: TCase[K]) => void;
 };
-
-export default Pages;
-

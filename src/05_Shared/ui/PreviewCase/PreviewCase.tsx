@@ -38,7 +38,7 @@ export interface IPreviewCase {
 
 const PreviewCase = ({ data }: IPreviewCase): JSX.Element => {
    return (
-      <NavLink end to={`/case/${data.id}`} className="preview-case">
+      <NavLink end to={`/cases/${data.id}`} className="preview-case">
 
          <div className="preview-case-img-container">
             <img src={coincase} alt="CASE" className="preview-case-img" />

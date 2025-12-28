@@ -44,6 +44,11 @@
    --app-bg-color-1: #101010;
    --app-bg-color-2: #FF9705;
    --app-bg-color-3: #ffb930;
+   --app-bg-color-4: #141414;
+   --app-bg-color-5: rgba(255, 181, 77, 0.1);
+   --app-bg-color-6: #0097ce;
+
+   --svg-icon-color: rgba(255, 255, 255, 0.6);
 }
 
 /* =================================

@@ -1,23 +1,14 @@
 /*
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 
-  МОДУЛЬ: Pages
+  КОМПОНЕНТ: Context
 
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-import HomePage from "./Home/Home";
-import CasesPage from "./Cases/CasesPage";
-import CasePage from "./Case/Case";
-
+import { createContext } from "react";
+import type { CaseEditorContextType } from "./CaseEditor.types";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-const Pages = {
-   Home: HomePage,
-   Cases: CasesPage,
-   Case: CasePage,
-};
-
-export default Pages;
-
+export const CaseEditorContext = createContext<CaseEditorContextType | null>(null);
