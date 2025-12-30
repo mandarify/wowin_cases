@@ -34,6 +34,15 @@ const casesSlice = createSlice({
          state.list.push(newCase);
          state.nextId = state.nextId + 1;
       },
+      addCasesList: (state, action: PayloadAction<TCase[]>) => {
+         const len = action.payload.length;
+         for (let i = 0; i < len; i++) {
+            const newCase = action.payload[i];
+            newCase.id = state.nextId + i;
+            state.list.push(newCase);
+         }
+         state.nextId = state.nextId + len;
+      },
       updateCase: (state, action: PayloadAction<TCase>) => {
          const itemIndex = state.list.findIndex(el => el.id === action.payload.id);
          const newCaseData = { ...action.payload };
@@ -62,5 +71,5 @@ const casesSlice = createSlice({
 
 /* ###################################################################### */
 
-export const { addCase, updateCase, removeCase, selectCaseId, clearSelectedCaseId, clearError, reset } = casesSlice.actions;
+export const { addCase, addCasesList, updateCase, removeCase, selectCaseId, clearSelectedCaseId, clearError, reset } = casesSlice.actions;
 export default casesSlice.reducer;

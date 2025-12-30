@@ -11,7 +11,7 @@
 
 // ########## ТИПЫ
 import type { TGiftData } from "../types/global";
-import type { TCaseItem, TCaseItemRarity } from "../types/global";
+import type { TCase, TCaseItem, TCaseItemRarity } from "../types/global";
 
 // ########## СТИЛИ
 
@@ -19,6 +19,7 @@ import type { TCaseItem, TCaseItemRarity } from "../types/global";
 
 // ########## МОДУЛИ
 import { RARITIES } from "../consts/global";
+import { random } from "./global";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
@@ -104,4 +105,103 @@ export const mathCaseItemsPercent = (items: TCaseItem[]): { data: TMathCaseItems
    }
 
    return { data: counts, items: clonedItems };
+};
+
+const getItemIndexByValue = (data: TCase, value: number) => {
+   const len = data.items.length;
+   let start = 0;
+   for (let i = 0; i < len; i++) {
+      start += data.items[i].permille;
+      if (value <= start) return i;
+   }
+   return len > 0 ? len - 1 : 0;
+};
+
+export const caseRtpTesting = (data: TCase, count: number): string[] => {
+
+   /* Проверка первичных условий для проверки. */
+
+   const setError = (error: string, ...msg: string[]): string[] => ["Тест выполнить не возможно!", `Причина: ${error}`, ...msg];
+
+   /* Количество попыток. */
+   if (count < 100) return setError(`Количество тестовых данных меньше 100.`, `Необходимо увеличить количество тестовых данных!`);
+
+   /* Цена кейса. */
+   if (data.price <= 0) return setError(`Цена кейса (${data.price} WOW) - некорректная.`, 'Необходимо изменить цену кейса.');
+
+   /* Полнота кейса. */
+   let totalPermille = 0;
+   for (let i = 0; i < data.items.length; i++) {
+      totalPermille += data.items[i].permille;
+   }
+   if (totalPermille !== 100000) return setError(
+      `Кейс неполный (${(totalPermille / 1000).toFixed(2)}%).`,
+      "Необходимо использовать как минимум 1 подарок в каждой категории.",
+      ...Object.entries(data.stats).filter(([, value]) => value === 0).map(([key, value]) => `- ${key}: ${value} (необходимо добавить +1).`)
+   );
+
+   /* Тестирование. */
+   const len = data.items.length;
+   const minPermille = 1;
+   const maxPermille = totalPermille;
+
+   const totalWowSpent = data.price * count;
+   let totalWowWin = 0;
+
+   const cards = Array.from({ length: len }).fill(0) as number[];
+   const rarities: Record<TCaseItemRarity, number> = {
+      legendary: 0,
+      epic: 0,
+      rare: 0,
+      unique: 0,
+      common: 0,
+   };
+
+   for (let i = 0; i < count; i++) {
+      const value = random(minPermille, maxPermille);
+      const itemIndex = getItemIndexByValue(data, value);
+      const item = data.items[itemIndex];
+      cards[itemIndex] += 1;
+      rarities[item.rarity] += 1;
+      totalWowWin += item.price;
+   }
+
+   const rtpPlayer = Math.floor(totalWowWin / totalWowSpent * 100);
+   const rtpGame = 100 - rtpPlayer;
+
+   const maxCountLen = count.toString().length;
+   const spaces = (length: number) => Array.from({ length }).join("\u00A0");
+   const cardsStats = Object.keys(cards).map(index => {
+      const id = parseInt(index);
+      const item = data.items[id];
+      const value = cards[id].toString();
+      return `- ${index}${spaces(3 - index.length)} | ${spaces(maxCountLen - value.length)}${value} шт. | ${item.rarity}${spaces(10 - item.rarity.length)} | ${item.content.name}`;
+   });
+
+   return [
+      `Тестирование кейса "${data.title}"`,
+      "",
+      `Цена 1 шт.${spaces(1)} : ${data.price} WOW`,
+      `Количество${spaces(1)} : ${count} шт.`,
+      "",
+      "Игрок:",
+      `RTP Игрока${spaces(1)} : ${rtpPlayer.toFixed(2)}%`,
+      `Потрачено${spaces(2)} : ${totalWowSpent} WOW`,
+      `Выиграно${spaces(3)} : ${totalWowWin} WOW`,
+      `Прибыль${spaces(4)} : ${totalWowWin - totalWowSpent} WOW`,
+      "",
+      "Казино:",
+      `RTP Казино${spaces(1)} : ${rtpGame.toFixed(2)}%`,
+      `Заработок${spaces(2)} : ${(0 - ((totalWowWin - totalWowSpent) / 100)).toFixed(2)}$`,
+      "",
+      `Статистика выпадения редкостей:`,
+      `- Legendary : ${rarities.legendary} шт.`,
+      `- Epic${spaces(6)} : ${rarities.epic} шт.`,
+      `- Rare${spaces(6)} : ${rarities.rare} шт.`,
+      `- Unique${spaces(4)} : ${rarities.unique} шт.`,
+      `- Common${spaces(4)} : ${rarities.common} шт.`,
+      "",
+      `Статистика выпадения подарков:`,
+      ...cardsStats,
+   ];
 };

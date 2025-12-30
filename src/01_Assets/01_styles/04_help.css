@@ -7,6 +7,10 @@
    overflow: hidden;
 }
 
+._none {
+   display: none;
+}
+
 /* Включает взаимодействие с элементов и его масу. */
 ._use {
    -ms-user-select: auto;

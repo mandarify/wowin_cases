@@ -19,7 +19,7 @@ export const casesMiddleware: Middleware = store => next => action => {
    if (typeof action === "object" && action !== null && "type" in action) {
       const type = (action as { type: string }).type;
 
-      if (["cases/addCase", "cases/updateCase", "cases/removeCase", "cases/reset"].includes(type)) {
+      if (["cases/addCase", "cases/updateCase", "cases/removeCase", "cases/reset", "cases/addCasesList"].includes(type)) {
          const state = store.getState() as AppState;
          StorageCases.save(state.cases.list);
       }

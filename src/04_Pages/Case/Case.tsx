@@ -15,7 +15,7 @@ import { cloneCaseAndReturnId } from "../../06_Store/cases/cases.thunks";
 
 // ########## STANDART
 import type { JSX } from "react";
-import React, { useCallback, useEffect, useState, useRef, useMemo } from "react";
+import React, { useCallback, useEffect, useState, useRef, useMemo, forwardRef, useImperativeHandle } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -32,7 +32,7 @@ import { Screen, CaseChooseList } from "../../03_Widgets";
 // ########## МОДУЛИ
 import { CaseEditorContext } from "../../05_Shared/contexts/CaseEditor/CaseEditor.context";
 import { downloadJson } from "../../05_Shared/funcs/global";
-import { mathCaseItemsPercent } from "../../05_Shared/funcs/gifts";
+import { mathCaseItemsPercent, caseRtpTesting } from "../../05_Shared/funcs/gifts";
 import { VERSION } from "../../05_Shared/consts/global";
 import { useModal } from "../../05_Shared/services/Modal/useModal";
 import { getGiftImg, getCointImg } from "../../05_Shared/funcs/gifts";
@@ -77,7 +77,12 @@ const CasePage = (): JSX.Element => {
    const [isSave, setIsSave] = useState<boolean>(true);
    const [draft, setDraft] = useState<TCase | null>(null);
 
+   const [tab, setTab] = useState<CasePageTab>("info");
+
    const [isTest, setIsTest] = useState<boolean>(false);
+   const [testResults, setTestResults] = useState<string[]>([]);
+   const timeoutTestId = useRef<number | null>(null);
+   const testValueRef = useRef<{ value: () => number, } | null>(null);
 
    const caseMath: TCaseMath | null = useMemo(() => {
       if (!draft) return null;
@@ -110,17 +115,28 @@ const CasePage = (): JSX.Element => {
       };
    }, [draft])
 
-   const [tab, setTab] = useState<CasePageTab>("info");
 
    useEffect(() => {
-      if (!caseData) navigate("/cases", { replace: true });
+      if (!caseData) {
+         navigate("/cases", { replace: true });
+      }
       else queueMicrotask(() => setDraft(caseData));
+
+      return () => {
+         if (timeoutTestId.current) {
+            clearTimeout(timeoutTestId.current);
+         }
+      };
    }, [navigate, caseData, setDraft]);
 
    const switchTab = useCallback((e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       const tabName = e.currentTarget.dataset.name as CasePageTab;
       setTab(tabName);
-   }, [setTab]);
+      if (isTest && timeoutTestId.current) {
+         clearTimeout(timeoutTestId.current);
+         setIsTest(false);
+      }
+   }, [setTab, isTest, setIsTest]);
 
    const updateDraft = useCallback(<K extends keyof TCase>(key: K, value: TCase[K]) => {
 
@@ -163,9 +179,15 @@ const CasePage = (): JSX.Element => {
    /* TEST */
 
    const onTestStart = useCallback(() => {
-      if (isTest) return;
+      if (isTest || !caseData) return;
       setIsTest(true);
-   }, [isTest, setIsTest]);
+      const res = caseRtpTesting(caseData, testValueRef?.current?.value() || 0);
+      setTestResults(res);
+      timeoutTestId.current = setTimeout(() => {
+         setIsTest(false);
+      }, (res.length * 50) + 200);
+   }, [isTest, caseData, setIsTest, setTestResults]);
+
 
    /* Buttons */
 
@@ -315,10 +337,12 @@ const CasePage = (): JSX.Element => {
                         <Topic2 title="Тестирование" />
                         <div className="case-editor-test">
                            <div className="case-editor-test-opts">
-                              <InputNumberLine id="caseWditorTestRange" isBlock={isTest} min={100} max={10000} step={100} current={1000} />
+                              <InputNumberLine ref={testValueRef} id="caseWditorTestRange" isBlock={isTest} min={100} max={10000} step={100} current={1000} />
                               <div className={`case-editor-test-btn-start ${isTest ? 'btn-block' : ''}`.trim()} onClick={onTestStart}><span className="_unselect">ТЕСТ</span></div>
                            </div>
-                           <div className="case-editor-test-result"></div>
+                           <div className="case-editor-test-result">
+                              {testResults.map((line, index) => <div key={index} className="case-editor-test-result-line _unselect" style={{ animationDelay: isTest ? `${(index + 1) * 50}ms` : '0ms' }} data-line={index + 1}>{line}</div>)}
+                           </div>
                         </div>
                      </div>
 
@@ -433,20 +457,21 @@ const CasePriceEl = React.memo(({ id, math, isBlock }: ICasePriceEl): JSX.Elemen
    const realRTP = (math && value && value > 0) ? `${(math.priceAvgByPermille / value * 100).toFixed(2)}%` : "0.00%";
 
    const change = useCallback((rawValue: number | string) => {
-      const newValue = typeof rawValue === "string" ? (parseInt(rawValue) || "") : rawValue;
+      const newValue = typeof rawValue === "string" ? (rawValue === "" ? "" : parseInt(rawValue)) : rawValue;
       setValue(newValue);
-      if (newValue) update("price", newValue);
+      if (typeof newValue === "number") update("price", newValue);
    }, [setValue, update]);
 
    const onChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
       if (isBlock) return;
-      const newValue = parseInt(e.currentTarget.value) || "";
+      const current = e.currentTarget.value;
+      const newValue = current === "" ? "" : parseInt(e.currentTarget.value);
       change(newValue);
    }, [isBlock, change]);
 
    const onBlur = useCallback(() => {
-      if (!value) setValue(0);
-   }, [value, setValue]);
+      if (!value) change(0);
+   }, [value, change]);
 
    return (
       <div className="case-editor-price" data-rtp={realRTP}>
@@ -470,7 +495,7 @@ export interface IInputNumberLine {
    isBlock?: boolean;
 };
 
-const InputNumberLine = React.memo(({ id, min, max, step, current, isBlock }: IInputNumberLine): JSX.Element => {
+const InputNumberLine = React.memo(forwardRef(({ id, min, max, step, current, isBlock }: IInputNumberLine, ref): JSX.Element => {
 
    const [value, setValue] = useState<number>(current);
 
@@ -478,7 +503,11 @@ const InputNumberLine = React.memo(({ id, min, max, step, current, isBlock }: II
       if (isBlock) return;
       const newValue = parseInt(e.currentTarget.value);
       setValue(newValue);
-   }, [setValue, isBlock])
+   }, [setValue, isBlock]);
+
+   useImperativeHandle(ref, (): { value: () => number } => ({
+      value: () => value,
+   }), [value]);
 
    return (
       <div className={`input-number-line ${isBlock ? 'input-number-line-block' : ''}`.trim()}>
@@ -486,7 +515,7 @@ const InputNumberLine = React.memo(({ id, min, max, step, current, isBlock }: II
          <div className="imput-number-line-value _unselect">{value}</div>
       </div>
    );
-});
+}));
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
