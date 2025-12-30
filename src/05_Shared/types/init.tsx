@@ -16,6 +16,7 @@ import { unixNow } from "../funcs/global";
 
 export const initDataCase: TCase = {
    id: -1,
+   version: 1,
    status: "edit",
    isTop: null,
    position: -1,
@@ -23,7 +24,8 @@ export const initDataCase: TCase = {
    desc: "Описание кейса.",
    slug: "",
    dtPublication: null,
-   dtCreate: unixNow(),
+   dtUpdated: unixNow(),
+   dtCreated: unixNow(),
    dtDeleted: null,
    style: "default",
    price: 0,

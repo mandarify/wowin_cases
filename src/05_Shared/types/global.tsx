@@ -46,13 +46,14 @@ export type TCaseItem = {
    rarity: TCaseItemRarity,
    permille: number,
    price: number,
-   content: TCaseItemContentType,
+   content: TCaseItemContent,
 };
 
 export type TCaseStatus = "edit" | "published" | "deleted";
 
 export type TCase = {
    id: number;
+   version: number;
    status: TCaseStatus,
    isTop: number | null;
    position: number;
@@ -60,7 +61,8 @@ export type TCase = {
    desc: string,
    slug: string,
    dtPublication: number | null,
-   dtCreate: number,
+   dtUpdated: number;
+   dtCreated: number,
    dtDeleted: number | null,
    style: TCaseStyle,
    price: number,
@@ -82,4 +84,16 @@ export type TCase = {
       high: string;
    },
    items: TCaseItem[],
+};
+
+export type TCaseSave = {
+   version: string,
+   type: "item",
+   item: TCase,
+};
+
+export type TCasesListSave = {
+   version: string,
+   type: "list",
+   list: TCase[],
 };

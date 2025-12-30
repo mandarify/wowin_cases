@@ -1,9 +1,10 @@
 /* =================================
-   Home Page
+   Case Choose List
 ==================================== */
 
-.page-cases {
+.case-choose-list {
    width: 100%;
+   height: max-content;
 
    display: flex;
    flex-direction: column;
@@ -12,7 +13,7 @@
    gap: 20px;
 }
 
-.page-cases-block {
+.case-choose-list-block {
    width: 100%;
    height: max-content;
 
@@ -21,15 +22,6 @@
    align-items: center;
    justify-content: center;
    gap: 10px;
-}
-
-.button-list-h {
-   width: 100%;
-
-   display: flex;
-   align-items: center;
-   justify-content: start;
-   gap: 6px;
 }
 
 /* =================================

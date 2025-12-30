@@ -22,10 +22,7 @@ import Price from "../Price/Price";
 
 // ########## МОДУЛИ
 import { formatUnixDate, splitKeepMark } from "../../funcs/global";
-
-/* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
-const getGiftImg = (id: string) => `/wowin_cases/gifts/files/${id}/webp256.webp`;
+import { getGiftImg } from "../../funcs/gifts";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
@@ -34,6 +31,8 @@ export interface IGift {
    mark: string;
    clickAction: (data: TGiftData) => void;
 };
+
+/* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 const Gift = React.memo(({ data, mark, clickAction }: IGift): JSX.Element => {
 
@@ -45,15 +44,15 @@ const Gift = React.memo(({ data, mark, clickAction }: IGift): JSX.Element => {
       <div className="gift" data-title={data.title || "no title"} onClick={onClick}>
 
          <div className="gift-img-container">
-            <img src={getGiftImg(data.id)} alt={data.title || "Gift"} className="gift-img" />
+            <img src={getGiftImg(data.id)} alt={data.title || "Gift"} className="gift-img _unselect" />
          </div>
 
-         <div className="gift-data-container">
+         <div className="gift-data-container _unselect">
             <GiftTitle title={data.title} mark={mark} />
             <div className="gift-date">{data.fdate ? formatUnixDate(data.fdate) : 'no date'}</div>
          </div>
 
-         <div className="gift-price">
+         <div className="gift-price _unselect">
             <Price value={data.price ? data.price.toFixed(0) : '0'} />
             <div className="gift-price-usd">{data.price ? '$' + (parseInt(data.price.toFixed(0)) / 100).toFixed(0) : '$0'}</div>
          </div>
@@ -69,10 +68,12 @@ export interface IGiftTitle {
    mark: string;
 };
 
+/* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
+
 const GiftTitle = React.memo(({ title, mark }: IGiftTitle): JSX.Element => {
 
    return (
-      <div className="gift-title">
+      <div className="gift-title _unselect">
          {!mark
             ? <span>{title || "-"}</span>
             : splitKeepMark(title, mark).map((t, index) =>

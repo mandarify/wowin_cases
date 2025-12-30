@@ -65,6 +65,18 @@
 }
 
 /* =================================
+   Case Buttons
+==================================== */
+
+.case-editor-button-list-h {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 6px;
+}
+
+/* =================================
    Case Tabs
 ==================================== */
 
@@ -106,15 +118,563 @@
 }
 
 .case-editor-tab-content {
-   padding: 0 10px;
+   padding: 10px 0;
    width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+   gap: 20px;
+}
+
+.case-editor-tab-content-block {
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
 }
 
 .raw {
    font-family: var(--app-font-family-mono);
-   font-size: 12px;
-   line-height: 1.4;
+   font-size: 10px;
+   font-weight: 600;
+   line-height: 1.2;
 }
+
+/* =================================
+   Case Gifts
+==================================== */
+
+.topic-2 {
+   padding: 0px 2px 10px 2px;
+   width: 100%;
+   font-size: 16px;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: var(--app-text-color-3);
+}
+
+.case-editor-gifts-list {
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 6px;
+}
+
+/* =================================
+   Case Item
+==================================== */
+
+.case-editor-item {
+   /* padding: 5px 12px; */
+   width: 100%;
+   height: 50px;
+
+   display: grid;
+   grid-template-columns: 60px minmax(130px, 150px) 1fr;
+   grid-template-rows: 50px;
+   gap: 10px;
+
+   /* color: var(--rarity-color-text); */
+   border-radius: 4px;
+
+   /* cursor: pointer; */
+}
+
+/* .case-editor-item:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+} */
+
+.case-editor-item-img-box {
+   position: relative;
+   overflow: hidden;
+   width: 60px;
+   height: 50px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 4px;
+   background: color-mix(in srgb, var(--rarity-color-bg-edge) 40%, transparent 80%);
+}
+
+.case-editor-item-img {
+   width: 60%;
+   aspect-ratio: 1/1;
+}
+
+.case-editor-item-btn-delete {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: rgba(255, 99, 71, 0.5);
+
+   cursor: pointer;
+}
+
+.case-editor-item-btn-delete .svg-icon {
+   animation: storm 500ms ease-in-out infinite;
+}
+
+.case-editor-item-data {
+   padding: 8px 0;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: space-between;
+}
+
+.case-editor-item-name {
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--app-text-color);
+}
+
+.case-editor-item-price {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 6px;
+}
+
+.case-editor-item-price-usd {
+   font-size: 12px;
+   font-weight: 500;
+   color: var(--app-text-color-1);
+}
+
+.case-editor-item-percent {
+   width: 52px;
+   font-family: var(--app-font-family-mono);
+   font-size: 12px;
+   font-weight: 600;
+
+   display: flex;
+   align-items: center;
+   justify-content: end;
+
+   color: var(--app-text-color-1);
+}
+
+/* =================================
+   Case Gifts Options
+==================================== */
+
+.case-editor-item-opts {
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.case-editor-item-rarities {
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 6px;
+}
+
+.case-editor-item-rarity {
+   width: 20px;
+   height: 20px;
+   border-radius: 10px;
+
+   font-size: 10px;
+   font-weight: 700;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   color: var(--rarity-color-bg-edge);
+   border: 2px solid var(--rarity-color-bg-edge);
+
+   cursor: pointer;
+}
+
+.case-editor-item-rarity.rarity-active {
+   background-color: var(--rarity-color-bg-edge);
+   cursor: auto;
+}
+
+/* =================================
+   Case Gifts Plus Button
+==================================== */
+
+.case-editor-gift-plus {
+   margin: 10px 0 10px 0;
+   width: 100%;
+   height: 50px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 4px;
+   border: 2px dashed var(--rarity-color-bg-edge);
+   background-color: color-mix(in srgb, var(--rarity-color-bg-edge) 10%, transparent);
+
+   cursor: pointer;
+}
+
+.case-editor-gift-plus:hover {
+   background-color: color-mix(in srgb, var(--rarity-color-bg-edge) 20%, transparent);
+}
+
+.case-editor-gift-plus::after {
+   content: "+";
+
+   font-size: 20px;
+   font-weight: 800;
+
+   color: var(--rarity-color-bg-edge);
+}
+
+
+/* =================================
+   Case Math
+==================================== */
+
+.case-math {
+   padding: 8px 2px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 6px;
+}
+
+.case-math-item {
+   width: 100%;
+   height: 42px;
+
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 12px 26px;
+   gap: 4px;
+}
+
+.case-math-item-value {
+   padding: 0 10px;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+
+   font-family: var(--app-font-family-mono);
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--app-text-color);
+
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.case-math-item-title {
+   padding: 0 2px;
+   min-width: 0;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.case-math-item-title span {
+   flex: 1;
+   min-width: 0;
+
+   font-size: 10px;
+   font-weight: 600;
+   color: var(--app-text-color-4);
+   text-transform: uppercase;
+
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.text-red {
+   color: #ff593f;
+}
+
+.text-green {
+   color: #76c508;
+}
+
+.text-default {
+   color: #FFDBB2;
+}
+
+/* =================================
+   Case Stat Counts
+==================================== */
+
+.case-stat-counts {
+   padding: 8px 2px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: minmax(50px, 1fr) minmax(50px, 70px) minmax(50px, 70px) minmax(50px, 70px) minmax(50px, 70px) minmax(50px, 70px);
+   grid-template-rows: 26px;
+   align-items: center;
+   gap: 6px;
+}
+
+.case-stat-count-item {
+   position: relative;
+   padding: 0 10px;
+   width: 100%;
+   height: 22px;
+
+
+   font-family: var(--app-font-family-mono);
+   font-size: 12px;
+   font-weight: 800;
+   /* color: var(--rarity-color-text); */
+
+   display: flex;
+   align-items: center;
+   justify-content: end;
+
+   border-radius: 11px 4px 4px 11px;
+   background: color-mix(in srgb, var(--rarity-color-bg-edge) 40%, transparent 80%);
+}
+
+.case-stat-count-item::before {
+   content: attr(data-name);
+
+   position: absolute;
+   top: -2px;
+   left: 0;
+
+   width: 26px;
+   height: 26px;
+   border-radius: 13px;
+
+   font-size: 12px;
+   font-weight: 800;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   color: var(--rarity-color-text);
+   background-color: var(--rarity-color-bg-edge);
+}
+
+.case-stat-count-total {
+   padding: 0 10px;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+/* =================================
+   Case Editor Price
+==================================== */
+
+.case-editor-price {
+   position: relative;
+   width: 100%;
+   height: 40px;
+}
+
+.case-editor-price-input {
+   padding: 4px 60px 4px 40px;
+   width: 100%;
+   height: 100%;
+
+   font-family: var(--app-font-family-mono);
+   font-style: 16px;
+   font-weight: 700;
+
+   color: var(--app-text-color-1);
+
+   border: 2px solid transparent;
+   border-radius: 6px;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-block {
+   color: var(--app-text-color-4);
+   user-select: none;
+}
+
+.case-editor-price-input:focus {
+   color: var(--app-text-color-4);
+   border: 2px solid var(--app-text-color-4);
+}
+
+.case-editor-price-img-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   height: 40px;
+   width: 40px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.case-editor-price-img {
+   height: 50%;
+   aspect-ratio: 1/1;
+}
+
+.case-editor-price::before {
+   content: attr(data-rtp);
+
+   position: absolute;
+   top: 50%;
+   right: 12px;
+   transform: translateY(-50%);
+
+   font-family: var(--app-font-family-mono);
+   font-size: 12px;
+   font-weight: 700;
+   color: var(--app-text-color-1);
+}
+
+/* =================================
+   Case Editor Test
+==================================== */
+
+.case-editor-test {
+   width: 100%;
+   height: 100%;
+
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 30px 1fr;
+   gap: 10px;
+}
+
+.case-editor-test-opts {
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 10px;
+}
+
+.case-editor-test-result {
+   width: 100%;
+   height: 100%;
+
+   background-color: green;
+}
+
+.input-number-line {
+   padding: 4px 12px;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 6px;
+
+   border-radius: 4px;
+   border: 2px solid var(--app-bg-color-2);
+}
+
+.input-number-line-block {
+   border: 2px solid var(--app-bg-color-5);
+}
+
+.input-number-line-range {
+   width: 100%;
+   height: 4px;
+
+   border-radius: 2px;
+
+   accent-color: var(--app-text-color-4);
+   background-color: var(--app-bg-color-5);
+
+   -webkit-appearance: none;
+   appearance: none;
+
+   cursor: pointer;
+}
+
+.input-number-line-block .input-number-line-range {
+   cursor: auto;
+}
+
+.input-number-line-range::-webkit-slider-runnable-track,
+.input-number-line-range::-moz-range-track {
+   height: 4px;
+   border-radius: 2px;
+   border: none;
+   background-color: var(--app-text-color);
+}
+
+.imput-number-line-value {
+   font-family: var(--app-font-family-mono);
+   font-size: 12px;
+   font-weight: 800;
+   color: var(--app-text-color-4);
+}
+
+.case-editor-test-btn-start {
+   padding: 0 20px;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 4px;
+   background-color: var(--app-bg-color-2);
+
+   cursor: pointer;
+}
+
+.case-editor-test-btn-start span {
+   font-size: 14px;
+   font-weight: 700;
+   color: var(--app-text-color);
+}
+
+.btn-block {
+   cursor: auto;
+   background-color: var(--app-bg-color-5);
+}
+
+.btn-block span {
+   color: var(--app-text-color-1);
+}
+
 
 /* =================================
    MEDIA
@@ -122,9 +682,35 @@
 
 @media (max-width: 1024px) {}
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+   .case-math-item-title {
+      font-size: 8px;
+   }
+}
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+   .case-stat-counts {
+      gap: 4px;
+      grid-template-columns: repeat(6, minmax(40px, 1fr));
+   }
+
+   .case-stat-count-item {
+      font-size: 10px;
+      padding: 0 6px;
+   }
+
+   .case-stat-count-item::before {
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      top: 3px;
+      left: 3px;
+
+      font-family: var(--app-font-family-mono);
+      font-size: 9px;
+      font-weight: 800;
+   }
+}
 
 @media (max-width: 425px) {}
 

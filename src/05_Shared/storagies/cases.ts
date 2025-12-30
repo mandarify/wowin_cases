@@ -7,9 +7,7 @@
 // ===== СТАНДАРТНЫЕ
 import type { TCase } from "../types/global";
 
-/* ###################################################################### */
-
-const STORAGE_KEY_CASES = "cases";
+import { VERSION, STORAGIES } from "../consts/global";
 
 /* ###################################################################### */
 
@@ -18,7 +16,7 @@ const StorageCases = {
    getNextId: (): number => {
       try {
          let nextId = -1;
-         const raw = localStorage.getItem(STORAGE_KEY_CASES);
+         const raw = localStorage.getItem(STORAGIES.CASES);
          const data: TCase[] | null = raw ? JSON.parse(raw) : null;
          if (data && Array.isArray(data)) {
             for (let i = 0; i < data.length; i++) {
@@ -33,19 +31,26 @@ const StorageCases = {
 
    load: (): TCase[] => {
       try {
-         const raw = localStorage.getItem(STORAGE_KEY_CASES);
+         const version = localStorage.getItem(STORAGIES.VERSION);
+         if (version !== VERSION) {
+            localStorage.setItem(STORAGIES.CASES, JSON.stringify([]));
+            return [];
+         }
+         const raw = localStorage.getItem(STORAGIES.CASES);
          return raw ? JSON.parse(raw) : [];
       } catch {
          return [];
+      } finally {
+         localStorage.setItem(STORAGIES.VERSION, VERSION);
       }
    },
 
    save: (cases: TCase[]) => {
-      localStorage.setItem(STORAGE_KEY_CASES, JSON.stringify(cases));
+      localStorage.setItem(STORAGIES.CASES, JSON.stringify(cases));
    },
 
    remove: () => {
-      localStorage.removeItem(STORAGE_KEY_CASES);
+      localStorage.setItem(STORAGIES.CASES, JSON.stringify([]));
    },
 };
 

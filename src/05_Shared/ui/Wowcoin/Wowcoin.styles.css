@@ -1,0 +1,104 @@
+/* =================================
+   Topic
+==================================== */
+
+
+.wowcoin {
+   width: 100%;
+   height: 40px;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 6px;
+}
+
+
+.wowcoin-img-container {
+   height: 100%;
+   aspect-ratio: 1/1;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 4px;
+   border: 2px solid var(--app-text-color-4);
+   background-color: color-mix(in srgb, var(--app-text-color-4) 20%, transparent 80%);
+}
+
+.wowcoin-img {
+   width: 60%;
+   aspect-ratio: 1/1;
+}
+
+
+.wowcoin-input-container {
+   width: 100%;
+   height: 100%;
+}
+
+.wowcoin-input-number {
+   padding: 4px 10px;
+   width: 100%;
+   height: 100%;
+
+   font-family: var(--app-font-family-mono);
+   font-style: 16px;
+   font-weight: 700;
+
+   color: var(--app-text-color-1);
+
+   border: 2px solid transparent;
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.wowcoin-input-number:focus {
+   color: var(--app-text-color-4);
+   border: 2px solid var(--app-text-color-4);
+}
+
+
+.wowcoin-button-add {
+   height: 100%;
+   aspect-ratio: 2/1;
+
+   font-size: 20px;
+   font-weight: 800;
+
+   color: var(--app-text-color-1);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255, 0.1);
+
+   cursor: pointer;
+}
+
+.button-add-active {
+   cursor: pointer;
+   color: var(--app-text-color);
+   background-color: #4c8300;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

@@ -11,6 +11,8 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 import type { TCasesState } from "./cases.types";
 import type { TCase } from "../../05_Shared/types/global";
 
+import { unixNow } from "../../05_Shared/funcs/global";
+
 /* ###################################################################### */
 
 const initialState: TCasesState = {
@@ -28,12 +30,16 @@ const casesSlice = createSlice({
    initialState,
    reducers: {
       addCase: (state, action: PayloadAction<TCase>) => {
-         state.list.push(action.payload);
+         const newCase = action.payload;
+         state.list.push(newCase);
          state.nextId = state.nextId + 1;
       },
       updateCase: (state, action: PayloadAction<TCase>) => {
          const itemIndex = state.list.findIndex(el => el.id === action.payload.id);
-         if (itemIndex !== -1) state.list[itemIndex] = action.payload;
+         const newCaseData = { ...action.payload };
+         newCaseData.version += 1;
+         newCaseData.dtUpdated = unixNow();
+         if (itemIndex !== -1) state.list[itemIndex] = newCaseData;
       },
       removeCase: (state, action: PayloadAction<{ id: number }>) => {
          const itemIndex = state.list.findIndex(el => el.id === action.payload.id);

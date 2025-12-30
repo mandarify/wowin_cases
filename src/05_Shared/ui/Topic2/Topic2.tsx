@@ -1,48 +1,41 @@
 /*
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 
-  КОМПОНЕНТ: CasePreviewList
+  КОМПОНЕНТ: Topic
 
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
-
-// State
 
 // ########## STANDART
 import React from "react";
 import type { JSX } from "react";
 
 // ########## ТИПЫ
-import type { TCase } from "../../05_Shared/types/global";
 
 // ########## СТИЛИ
-import "./CasePreviewList.styles.css";
+import "./Topic2.styles.css";
 
 // ########## КОМПОНЕНТЫ
-import { PreviewCase } from "../../05_Shared/ui";
 
 // ########## МОДУЛИ
 
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-export interface ICasePreviewList {
-   cases: TCase[]
+export interface ITopic2 {
+   title: string;
 };
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 
-const CasePreviewList = ({ cases }: ICasePreviewList): JSX.Element => {
-
+const Topic2 = ({ title }: ITopic2): JSX.Element => {
    return (
-      <div className="case-preview-list">
-         {[...cases].sort((a, b) => b.dtCreated - a.dtCreated).map(item => <PreviewCase key={item.id} data={item} />)}
-      </div>
+      <h3 className="topic-2">{title}</h3>
    );
 };
 
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-export default React.memo(CasePreviewList);
+export default React.memo(Topic2);

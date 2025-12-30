@@ -49,6 +49,11 @@
    --app-bg-color-6: #0097ce;
 
    --svg-icon-color: rgba(255, 255, 255, 0.6);
+
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #0F3258;
+   --rarity-color-bg-edge: #5E98D9;
+   --rarity-color-bg-center: #DAECFF;
 }
 
 /* =================================
@@ -88,6 +93,13 @@
    --rarity-color-border: #0F3258;
    --rarity-color-bg-edge: #5E98D9;
    --rarity-color-bg-center: #DAECFF;
+}
+
+[data-rarity="default"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #101010;
+   --rarity-color-bg-edge: #323232;
+   --rarity-color-bg-center: #343434;
 }
 
 /* =================================

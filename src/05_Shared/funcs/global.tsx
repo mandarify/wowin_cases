@@ -23,3 +23,17 @@ export const splitKeepMark = (title: string, mark: string): string[] => {
    const regex = new RegExp(`(${escaped})`, "gi");
    return title.split(regex);
 };
+
+export const downloadJson = (data: object, name: string) => {
+   const blob = new Blob(
+      [JSON.stringify(data, null, 3)],
+      { type: 'application/json' }
+   );
+
+   const a = document.createElement('a');
+   a.href = URL.createObjectURL(blob);
+   a.download = `${name}.json`;
+   a.click();
+
+   URL.revokeObjectURL(a.href);
+};

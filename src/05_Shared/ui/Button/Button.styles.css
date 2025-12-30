@@ -11,7 +11,7 @@
    justify-content: center;
 
    border-radius: 4px;
-   background-color: #006083;
+   background-color: var(--btn-bg-main-color);
 
    cursor: pointer;
 }
@@ -23,11 +23,44 @@
 }
 
 .button:hover {
-   background-color: #0097ce;
+   background-color: var(--btn-bg-hover-color);
 }
 
 .button:hover .button-content {
    color: var(--app-text-color);
+}
+
+.button-disable {
+   cursor: auto;
+}
+
+/* =================================
+   Button Types
+==================================== */
+
+[data-type="default"] {
+   --btn-bg-main-color: #006083;
+   --btn-bg-hover-color: #0097ce;
+}
+
+[data-type="disable"] {
+   --btn-bg-main-color: rgba(255, 255, 255, 0.1);
+   --btn-bg-hover-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-type="green"] {
+   --btn-bg-main-color: #4c8300;
+   --btn-bg-hover-color: #5d9f00;
+}
+
+[data-type="red"] {
+   --btn-bg-main-color: #c61c02;
+   --btn-bg-hover-color: #ce2a11;
+}
+
+[data-type="yellow"] {
+   --btn-bg-main-color: #9a5b02;
+   --btn-bg-hover-color: #ba6c00;
 }
 
 /* =================================

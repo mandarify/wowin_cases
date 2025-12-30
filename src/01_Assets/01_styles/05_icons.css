@@ -251,6 +251,11 @@
    mask-image: url("../03_icons/svg/img.svg");
 }
 
+.svg-model-delete {
+   -webkit-mask-image: url("../03_icons/svg/delete.svg");
+   mask-image: url("../03_icons/svg/delete.svg");
+}
+
 /* Big Elements */
 
 .svg-model-bigplus {

@@ -32,15 +32,16 @@ import { sortGifts } from "../../05_Shared/funcs/gifts";
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 
-// export interface IGiftList {
-
-// };
+export interface IGiftList {
+   chooseAction?: (data: TGiftData) => void;
+   isShort?: true;
+};
 
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 
-const GiftList = (): JSX.Element => {
+const GiftList = ({ chooseAction, isShort }: IGiftList): JSX.Element => {
 
    const dispatch = useDispatch<AppDispatch>();
    const gifts = useSelector(getGiftsState);
@@ -55,8 +56,8 @@ const GiftList = (): JSX.Element => {
    }, [dispatch, gifts.status]);
 
    const chooseGift = useCallback((data: TGiftData) => {
-      console.log(data);
-   }, []);
+      if (chooseAction) chooseAction(data);
+   }, [chooseAction]);
 
    const sortDate = useCallback(() => {
       if (sort === "fdate") setSortType(prev => prev === "asc" ? "desc" : "asc");
@@ -79,7 +80,7 @@ const GiftList = (): JSX.Element => {
             <div className={`gifts-sort-item ${sort === "price" ? 'gifts-sort-item_active' : ''}`.trim()} onClick={sortPrice}>ЦЕНА</div>
          </div>
 
-         <div className="gifts-list">
+         <div className={`gifts-list ${isShort ? 'gifts-list-short' : 'gifts-list-full'}`}>
             {gifts.data && sortGifts([...gifts.data.elements].filter(g => !search ? g : g.title.toLowerCase().includes(search.toLowerCase())), sort, sortType)
                .map(item => <Gift key={item.id} data={item} mark={search.toLowerCase()} clickAction={chooseGift} />)}
          </div>
